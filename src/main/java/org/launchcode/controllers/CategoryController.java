@@ -21,9 +21,6 @@ public class CategoryController {
 
     @RequestMapping(value = "")
     public String index (Model model) {
-        //when use Iterable as return value, get error Required java.lang.Iterable<> Found:java.lang.String
-        // and red marks
-        //under return "category/index";
 
         model.addAttribute("categories", categoryDao.findAll());
         model.addAttribute("title", "Categories");

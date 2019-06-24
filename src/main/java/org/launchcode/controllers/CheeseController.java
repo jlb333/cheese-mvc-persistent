@@ -35,8 +35,7 @@ public class CheeseController {
 
         model.addAttribute("cheeses", cheeseDao.findAll());
         model.addAttribute("title", "My Cheeses");
-        //model.addAttribute("categories", categoryDao.findAll());
-        //changed from "categories" to "category"- did not work, so changed back
+
 
         return "cheese/index";
     }
